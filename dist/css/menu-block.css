@@ -1,0 +1,91 @@
+@charset "UTF-8";
+.menu__info {
+  /* Лента слайдов */
+  /* Лента слайдов */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+}
+
+.menu__info .slick-slider {
+  position: relative;
+}
+
+.menu__info .slick-slide {
+  margin: 0 30px;
+}
+
+.menu__info .slick-list {
+  overflow: hidden;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.menu__info .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu__info .slick-arrow {
+  background-color: Transparent;
+  border: 1px solid #8E9199;
+  overflow: hidden;
+  width: 34px;
+  height: 43px;
+}
+
+.menu__info .slick-arrow.slick-prev {
+  background: url("../img/news/prev.png") no-repeat center center;
+  cursor: pointer;
+  position: absolute;
+  top: -58px;
+  right: 45px;
+  font-size: 0;
+}
+
+.menu__info .slick-arrow.slick-next {
+  font-size: 0;
+  background: url("../img/news/next.png") no-repeat center center;
+  cursor: pointer;
+  position: absolute;
+  top: -58px;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .menu__blocks_active .slick-arrow {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu__blocks_active .slick-arrow {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .menu__info {
+    /* Лента слайдов */
+  }
+  .menu__info .slick-slider {
+    position: relative;
+  }
+  .menu__info .slick-slide {
+    margin: 0 5px;
+  }
+  .menu__info .slick-list {
+    overflow: hidden;
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+}
+/*# sourceMappingURL=menu-block.css.map */
